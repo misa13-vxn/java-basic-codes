@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class me{
+    int a;
+    int b; 
+    
+    void Swap(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENter value1");
+        a = sc.nextInt();
+        System.out.println("ENter value2");
+        b = sc.nextInt();
+    
+        int temp =a;
+        a = b;
+        b = temp;
+        System.out.println("After Swapping: a="+a+",b="+b);
+    }
+}  
+
+class Main {
+    public static void main(String[] args) {
+        me m = new me();
+        m.Swap();
+    }
+}
