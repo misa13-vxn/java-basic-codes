@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class bbg {
+    double r;
+
+    void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value of Radius:");
+        r = sc.nextDouble();     
+    }
+
+    void aoc() {
+        double A = 3.14 * r * r;
+        System.out.println("Area of circle is :" + A);
+    }
+
+    void poc() {
+        double P = 2 * 3.14 * r;
+        System.out.println("Perimeter of circle is :" + P);   
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        bbg b = new bbg();
+
+        b.input();   
+        b.aoc();
+        b.poc();
+    }
+}
