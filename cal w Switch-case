@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m1, m2, m3, m4, m5, total, avg, grade;
+
+        System.out.println("Enter marks of 5 subjects :");
+        m1 = sc.nextInt();
+        m2 = sc.nextInt();
+        m3 = sc.nextInt();
+        m4 = sc.nextInt();
+        m5 = sc.nextInt();
+
+        total = m1 + m2 + m3 + m4 + m5;
+        avg = total / 5;   
+
+        System.out.println("Total Marks: " + total);
+        System.out.println("Average: " + avg);
+
+        grade = avg / 10; 
+
+        switch (grade) {
+            case 10:
+            case 9:
+                System.out.println("Result: Excellent!");
+                break;
+            case 8:
+            case 7:
+                System.out.println("Result: Very Good!");
+                break;
+            case 6:
+                System.out.println("Result: Good!");
+                break;
+            case 5:
+            case 4:
+                System.out.println("Result: Pass!");
+                break;
+            default:
+                System.out.println("Result: Fail!");
+        }
+    }
+}
