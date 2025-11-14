@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Ed {
+    int start , end;
+
+    void fun(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter starting range");
+        start = sc.nextInt();
+
+        System.out.println("enter ending range");
+        end = sc.nextInt();
+        
+        for(int i = start; i <= end; i++){
+            if(i % 2 == 0){
+                System.out.println("even numbers between range");
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+class Main {
+    public static void main(String args[]){
+        Ed e = new Ed();
+        e.fun();
+    }
+}
