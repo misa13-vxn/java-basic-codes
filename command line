@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       int n1 = Integer.parseInt(args[0]);
+       System.out.println("enter first value"+n1);
+       int n2 = Integer.parseInt(args[1]);
+       System.out.println("enter second value"+n2);
+       int n3 = Integer.parseInt(args[2]);
+       System.out.println("enter third value"+n3);
+    
+      if (n1>n2 && n1>n3){
+          System.out.println("first value is max");
+      }
+      else if(n2>n1 && n2>n3){
+          System.out.println("second value is max");
+      }else{
+          System.out.println("third value is max");
+      }
+    }
+}
