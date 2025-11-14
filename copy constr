@@ -1,0 +1,34 @@
+class Length {
+    double feet;
+    double cm;
+
+    // Normal constructor
+    Length(double f) {
+        feet = f;
+        cm = feet * 30.48;   // conversion
+    }
+
+    // Copy constructor
+    Length(Length obj) {
+        this.feet = obj.feet;
+        this.cm = obj.cm;
+    }
+
+    void display() {
+        System.out.println("Feet: " + feet);
+        System.out.println("Centimeters: " + cm);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Length original = new Length(5);   // before conversion
+        Length copy = new Length(original); // after using copy constructor
+
+        System.out.println("Original Object Values:");
+        original.display();
+
+        System.out.println("\nCopied Object Values:");
+        copy.display();
+    }
+}
